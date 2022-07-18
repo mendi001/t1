@@ -1,0 +1,267 @@
+body {
+    font-family: 'El Messiri', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Send Flowers', cursive;
+    font-family: 'Spectral', serif;
+}
+
+/* header */
+header {
+    display: flex;
+    height: 100px;
+    justify-content: space-evenly;
+}
+
+#img1 {
+    height: 100%;
+    width: 10%;
+}
+
+nav {
+    display: flex;
+    width: 50%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+li {
+    display: flex;
+    list-style: none;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(33, 166, 161);
+}
+
+a:hover {
+    color: white;
+    background-color: rgb(33, 166, 161);
+    border: 1px solid rgb(245, 243, 243);
+    ;
+    border-radius: 5px;
+}
+
+#menu {
+    display: none;
+}
+
+/* main
+container1 */
+.container1 {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(245, 243, 243);
+}
+
+.left1 {
+    display: flex;
+    flex: 1;
+}
+
+.left-in {
+    height: 270px;
+    width: 100%;
+    padding-left: 150px;
+}
+
+button {
+    margin-top: 30px;
+    margin-right: 30px;
+    height: 50px;
+    width: 80px;
+    color: white;
+    background-color: rgb(33, 166, 161);
+    border: 1px solid rgb(245, 243, 243);
+    ;
+    border-radius: 5px;
+}
+
+button:hover {
+    color: rgb(33, 166, 161);
+    background-color: rgb(245, 243, 243);
+    border: 1px solid rgb(33, 166, 161);
+    border-radius: 5px;
+}
+
+.right1 {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    height: 270px;
+    width: 400px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding-bottom: 5px;
+    margin-right: 100px;
+}
+
+.image-main1 {
+    height: 230px;
+    width: 400px;
+}
+
+/* container2 */
+.container2 {
+    display: flex;
+    width: 100%;
+    height: 500px;
+
+}
+
+.left2 {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.middle2 {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.right2 {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.left-in-2 {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-in-2 {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-in-2 {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-main2 {
+    height: 200px;
+    width: 350px;
+}
+
+.content {
+    color: rgb(33, 166, 161);
+}
+
+/* footer */
+footer {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(207, 114, 28);
+    align-items: center;
+    padding-left: 20px;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .container2 {
+        display: flex;
+        width: 100%;
+        height: 830px;
+    }
+
+    .left2 {
+        display: flex;
+        flex: 1;
+    }
+
+    .middle2 {
+        display: flex;
+        flex: 1;
+    }
+
+    .right2 {
+        position: absolute;
+        margin-left: 75px;
+        margin-top: 400px;
+    }
+
+}
+
+
+
+/* Extra small evices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    #img1 {
+        width: 60%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        width: 334px;
+        height: 40px;
+        background-color: rgb(207, 114, 28);
+    }
+
+    .right1 {
+        display: none;
+    }
+
+    .left-in {
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 1400px;
+    }
+
+    .left-in-2,
+    .middle-in-2 {
+        margin-left: 0;
+    }
+
+    .image-main2 {
+        width: 100%;
+    }
+
+    footer {
+        height: 40px;
+        width: 325px;
+    }
+}
